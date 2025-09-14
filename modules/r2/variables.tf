@@ -12,7 +12,7 @@ variable "bucket_name" {
 variable "location" {
   type        = string
   description = "Location/region of the R2 bucket"
-  default     = "weur"
+  default     = "WEUR"
 }
 
 variable "storage_class" {
