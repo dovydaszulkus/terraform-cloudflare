@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket                      = "terraform-cloudflare-infrastructure"
-    key                         = "terraform.tfstate"
+    key                         = "prod/terraform.tfstate"
     region                      = "auto"
     skip_credentials_validation = true
     skip_metadata_api_check     = true
