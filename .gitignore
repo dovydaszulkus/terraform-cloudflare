@@ -1,3 +1,9 @@
 # terraform
 *.tfplan
 .terraform
+terraform.tfstate.*
+.terraform.tfstate.lock.info
+.tfvars
+
+# Other
+.env
