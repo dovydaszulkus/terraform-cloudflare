@@ -11,3 +11,10 @@ module "web_app_worker" {
   account_id  = var.account_id
   worker_name = "web-app-worker-prod"
 }
+
+module "web_app_database" {
+  source = "../../modules/d1"
+
+  account_id    = var.account_id
+  database_name = "web_app_db_prod"
+}
