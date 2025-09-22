@@ -18,3 +18,11 @@ module "web_app_database" {
   account_id    = var.account_id
   database_name = "web_app_db_prod"
 }
+
+module "web_app_queue" {
+  source = "../../modules/queues"
+
+  account_id = var.account_id
+  queue_name = "web-app-queue-prod"
+  
+}
